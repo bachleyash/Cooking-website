@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cooking Recipes</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <h1>Welcome to Delicious Recipes</h1>
+    <p>Your one-stop destination for mouthwatering recipes!</p>
+    <input type="text" id="search-bar" placeholder="Search recipes..." oninput="searchRecipes()">
+  </header>
+  <main>
+    <section class="categories">
+      <h2>Explore Categories</h2>
+      <div class="category-card" onclick="filterRecipes('Quick Meals')">Quick Meals</div>
+      <div class="category-card" onclick="filterRecipes('Healthy Recipes')">Healthy Recipes</div>
+      <div class="category-card" onclick="filterRecipes('Desserts')">Desserts</div>
+    </section>
+    <section class="recipes">
+      <h2>Recipes</h2>
+      <div id="recipe-container">
+        <!-- Recipes will be dynamically added here -->
+      </div>
+    </section>
+  </main>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
